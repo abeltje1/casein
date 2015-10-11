@@ -18,8 +18,8 @@ module Casein
 
     attr_accessor :notify_of_new_password
 	 
-    after_create :send_create_notification
-    after_update :send_update_notification
+    #after_create :send_create_notification
+    #after_update :send_update_notification
     before_validation :check_time_zone
     
     validates_presence_of :login, :name, :email
